@@ -234,9 +234,9 @@ public final class MecanumDrive {
         rightFront.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
 
         leftFront.setDirection(DcMotorSimple.Direction.REVERSE);  // motorFs - REVERSE
-        leftBack.setDirection(DcMotorSimple.Direction.FORWARD);   // motorSs - FORWARD (CHANGED!)
-        rightFront.setDirection(DcMotorSimple.Direction.REVERSE); // motorFd - REVERSE (ADD THIS!)
-        rightBack.setDirection(DcMotorSimple.Direction.REVERSE);  // motorSd - REVERSE (CHANGED!)
+        leftBack.setDirection(DcMotorSimple.Direction.REVERSE);   // motorSs - REVERSE
+        rightFront.setDirection(DcMotorSimple.Direction.REVERSE); // motorFd - REVERSE
+        rightBack.setDirection(DcMotorSimple.Direction.FORWARD);  // motorSd - FORWARD
 
         odoWheelX = hardwareMap.get(Servo.class, "odometry X");
         odoWheelY = hardwareMap.get(Servo.class, "odometry Y");
